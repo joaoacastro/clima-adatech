@@ -32,7 +32,7 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", (eve
             icone: `https://openweathermap.org/img/wn/${dados.weather[0].icon}@2x.png`,
         };
         sectionTempoInfo.innerHTML = `
-            <h2>${infos.local}</h2>
+            <h2 class="cidade">${infos.local}</h2>
           <div class="tempo-dados">
             <div class="tempo-dados-temperatura">
                 <h2>Temperatura</h2>
@@ -51,7 +51,8 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", (eve
             <img src="${infos.icone}" />
           </div>
   
-      `;
+          `;
+        input.value = "";
     }
     catch (err) {
         alert(`A cidade ${input.value} não existe, por favor digite um nome válido para cidade.`);
