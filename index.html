@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.:Previsão do Tempo:.</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- API Usada neste projeto
+        https://openweathermap.org/ -->
+
+    <!-- API KEY
+        35050c22c2c3ac8d260aa5742de645a6 -->
+  </head>
+  <body>
+    <main>
+      <h1>Previsão do Tempo</h1>
+
+      <section id="search-form">
+        <form>
+          <input type="text" id="input-localizacao" placeholder="Cidade" />
+          <button id="button-localizacao">Search</button>
+        </form>
+      </section>
+
+      <section id="tempo-info"></section>
+    </main>
+
+    <script src="dist/index.js"></script>
+  </body>
+</html>

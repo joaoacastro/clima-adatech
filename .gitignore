@@ -1,0 +1,15 @@
+# Ignore arquivos de configuração do editor
+.vscode/
+
+# Ignore node_modules
+/node_modules/
+
+# Ignore arquvios de log
+*.log
+
+# Ignore arquivos temporários do sistema operacional (exemplo: macOS e Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore arquivos específicos do TypeScript, como arquivos intermediários de compilação (caso haja)
+typescript/

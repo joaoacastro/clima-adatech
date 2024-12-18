@@ -1,0 +1,86 @@
+body {
+  color: #fff;
+  background-color: #3a3a3a;
+  font-family: "Comfortaa", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 2rem;
+  background-color: #525252;
+  border-radius: 20px;
+  max-width: 800px;
+}
+
+main > h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#search-form form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#search-form input {
+  flex: 1;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+#search-form button {
+  background-color: #99d3df;
+  color: #000;
+  border-radius: 5px;
+  padding: 0rem 1rem;
+  height: 30px;
+}
+
+#search-form button:hover {
+  cursor: pointer;
+  background-color: #375b61;
+  color: #fff;
+}
+
+#tempo-info {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tempo-dados {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+
+.tempo-dados div {
+  padding: 10px;
+}
+
+#tempo-info h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#tempo-info .tempo-dados h2 {
+  font-size: 14px;
+}
+
+.tempo-dados span {
+  font-size: 40px;
+}
