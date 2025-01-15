@@ -2,7 +2,7 @@ body {
   color: #fff;
   background-color: #3a3a3a;
   font-family: "Comfortaa", sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,8 +82,7 @@ main > h1 {
   padding: 10px;
 }
 
-#tempo-info .cidade,
-.previsaoTitulo {
+#tempo-info .cidade {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -91,8 +90,7 @@ main > h1 {
   font-weight: 400;
 }
 
-.cidade,
-.previsaoTitulo {
+.cidade {
   background-color: #375b61;
   padding: 0.5rem;
   border-radius: 10px;
@@ -107,22 +105,8 @@ main > h1 {
 }
 
 @media (max-width: 680px) {
-  .tempo-dados {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-  }
-  .tempo-dados-temperatura,
-  .tempo-dados-sensacao,
-  .tempo-dados-umidade{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .previsao{
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-  }
-  .previsaoDia{
-    padding: 13px 0;
+  main {
+    height: 500px;
+    width: 400px;
   }
 }

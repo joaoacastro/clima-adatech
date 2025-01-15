@@ -16,22 +16,22 @@
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Comfortaa:wght@300..700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- API Usada neste projeto
-        https://openweathermap.org/ -->
   </head>
   <body>
     <main>
-      <h1>Clima</h1>
-
-      <section id="search-form">
-        <form>
-          <input type="text" id="input-localizacao" placeholder="Cidade" />
-          <button id="button-localizacao">Search</button>
-        </form>
-      </section>
-
-      <section id="tempo-info"></section>
+      <div class="container">
+        <h1>Clima</h1>
+  
+        <section id="search-form">
+          <form>
+            <input type="text" id="input-localizacao" placeholder="Cidade" />
+            <button id="button-localizacao">Search</button>
+          </form>
+        </section>
+  
+        <section id="tempo-info"></section>
+        <section id="previsao-info"></section>
+      </div>
     </main>
 
     <script src="dist/index.js"></script>
