@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.:Clima:.</title>
 
+    <link rel="shortcut icon" href="./img/clima-ico.png" type="image/x-icon">
+
     <!-- style -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,17 +21,26 @@
     />
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="./pages/about.html"> <li>About</li></a>
+          <a href="./pages/contact.html"> <li>Contact</li></a>
+          <a href="./pages/API.html"> <li>API</li></a>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="container">
         <h1>Clima</h1>
-  
+
         <section id="search-form">
           <form>
             <input type="text" id="input-localizacao" placeholder="Cidade" />
             <button id="button-localizacao">Search</button>
           </form>
         </section>
-  
+
         <section id="tempo-info"></section>
         <section id="previsao-info"></section>
       </div>

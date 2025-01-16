@@ -1,0 +1,11 @@
+p{
+    color: #ffffff;
+    padding: 30px 50px;
+    text-align: justify;
+}
+a{
+    list-style: none;
+    color: #ffffff;
+    /* text-decoration: none; */
+    font-weight: bold;
+}

@@ -1,4 +1,9 @@
 body {
+  margin: 0; /* Remove margens padrão do body */
+  padding-top: 80px; /* Adiciona espaço para o header fixo */
+}
+
+body {
   color: #fff;
   background-color: #3a3a3a;
   font-family: "Comfortaa", sans-serif;
@@ -15,7 +20,7 @@ main {
   max-width: 800px;
 }
 
-main > h1 {
+.container > h1 {
   display: flex;
   justify-content: center;
   font-size: 40px;

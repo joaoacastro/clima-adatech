@@ -1,0 +1,6 @@
+main p{
+    color: #ffffff;
+    padding: 10px 50px;
+    display: flex;
+    text-align: justify;
+}
