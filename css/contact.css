@@ -20,16 +20,18 @@ main{
   list-style: none;
 }
 
+.email-container a,
 .linkedin-container a,
 .github-container a,
 .instagram-container a {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   padding: 30px 0;
   text-decoration: none;
 }
 
+.email-container img,
 .linkedin-container img,
 .github-container img,
 .instagram-container img {
@@ -37,9 +39,12 @@ main{
   height: 40px;
 }
 
+.email-container li,
 .linkedin li,
 .github li,
 .instagram li {
+  display: flex;
+  text-align: end;
   font-size: 20px;
   color: #ffffff;
 }
