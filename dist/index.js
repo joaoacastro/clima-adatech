@@ -120,17 +120,45 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", (eve
         //   previsaoDiaDiv.appendChild(descricaoSpan);
         //   previsaoDiv.appendChild(previsaoDiaDiv);
         // });
+        // const previsoesUnicas: { [key: string]: boolean } = {};
+        // previsoes.forEach((previsao: any) => {
+        //   const data = new Date(previsao.dt * 1000);
+        //   const diaDaSemanaIndex = data.getDay();
+        //   const diaDaSemana = diasDaSemana[diaDaSemanaIndex];
+        //   // Verifique se o dia já foi adicionado
+        //   if (previsoesUnicas[diaDaSemana]) {
+        //     return; // Pule se o dia já estiver no objeto
+        //   }
+        //   previsoesUnicas[diaDaSemana] = true;
+        //   const descricaoClima =
+        //     previsao.weather[0]?.description || "Descrição não disponível";
+        //   const previsaoDiaDiv = document.createElement("div");
+        //   previsaoDiaDiv.classList.add("previsaoDia");
+        //   const diaTitulo = document.createElement("h2");
+        //   diaTitulo.textContent = diaDaSemana;
+        //   previsaoDiaDiv.appendChild(diaTitulo);
+        //   const temperaturaSpan = document.createElement("span");
+        //   temperaturaSpan.textContent = `${Math.round(previsao.main.temp)}ºC`;
+        //   previsaoDiaDiv.appendChild(temperaturaSpan);
+        //   const descricaoSpan = document.createElement("span");
+        //   descricaoSpan.textContent = descricaoClima;
+        //   previsaoDiaDiv.appendChild(descricaoSpan);
+        //   previsaoDiv.appendChild(previsaoDiaDiv);
+        // });
         const previsoesUnicas = {};
+        let diasAdicionados = 0;
         previsoes.forEach((previsao) => {
             var _a;
+            if (diasAdicionados >= 4)
+                return; // Limita a 4 dias únicos
             const data = new Date(previsao.dt * 1000);
             const diaDaSemanaIndex = data.getDay();
             const diaDaSemana = diasDaSemana[diaDaSemanaIndex];
-            // Verifique se o dia já foi adicionado
             if (previsoesUnicas[diaDaSemana]) {
                 return; // Pule se o dia já estiver no objeto
             }
             previsoesUnicas[diaDaSemana] = true;
+            diasAdicionados++;
             const descricaoClima = ((_a = previsao.weather[0]) === null || _a === void 0 ? void 0 : _a.description) || "Descrição não disponível";
             const previsaoDiaDiv = document.createElement("div");
             previsaoDiaDiv.classList.add("previsaoDia");
